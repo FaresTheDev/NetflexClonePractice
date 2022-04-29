@@ -27,4 +27,4 @@ FAQ5.addEventListener("click", function() {
 
 FAQ6.addEventListener("click", function() {
     document.getElementById("q6-card").classList.toggle("show")
-})
+}) 
