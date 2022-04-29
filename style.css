@@ -123,7 +123,7 @@ header {
 }
 
 .subscripe {
-    display: flex;
+    display: flex;                                                           
     justify-content: center;
 }
 
@@ -162,7 +162,6 @@ option {
 
 .hero {
     width: 100%;
-    height: auto;
     background-color: black;
 }
 
@@ -182,8 +181,8 @@ option {
 }
 
 .headline-div {
-    width: 500px;
-    height: 300px;
+    max-width: 500px;
+    max-height: 300px;
 }
 
 .enjoyTV h2 {
@@ -355,6 +354,9 @@ option {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.7rem;
 }
+/* end hero */
+
+/* start footer */
 
 footer {
     height: 300px;
@@ -375,7 +377,7 @@ footer h1 {
 }
 
 .links a {
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.4);                                    /*COMEHERE*/  
     font-size: 1.2rem;
     font-family: 'Montserrat', sans-serif;
 }
@@ -398,4 +400,46 @@ footer h1 {
     border: 1px rgba(255, 255, 255, 0.4) solid;
     margin-left: 7rem;
 }
-/* end hero */
+/* end footer */
+
+/* media querry  */
+@media (max-width: 1084px) {
+    .enjoyTV {
+        flex-direction: column;
+    }
+
+    .downloads {
+        flex-direction: column;
+    }
+
+    .pile {
+        flex-direction: column;
+    }
+
+    .kids {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 750px) {
+    .Qs button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 720px) {
+    .subscripe {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subscripe input {
+        width: 300px;
+    }
+
+    .subscripe button {
+        margin: 3rem 0;
+
+    }
+
+}
